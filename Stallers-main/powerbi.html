@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>Professionals</title>
+  <link rel="icon" href="assets/images/svg.svg" type="image/x-icon" />
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/jee.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+  <style>
+    :root {
+      --color1: #31c66f;
+      --color2: #27ae60;
+      --color3: #f53b57;
+      --color4: #d3213c;
+      --color5: #686de0;
+      --color6: #4834d4;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .pricing-tables {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 0;
+    }
+
+    .pricingTable {
+      color: var(--color1);
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+      padding: 30px 0 0;
+      position: relative;
+      z-index: 1;
+      width: 280px;
+      margin: 0 20px;
+      background: #1B1B33;
+      border-radius: 30px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .pricingTable.green {
+      --color1: #31c66f;
+      --color2: #27ae60;
+    }
+
+    .pricingTable.pink {
+      --color1: #f53b57;
+      --color2: #d3213c;
+    }
+
+    .pricingTable.blue {
+      --color1: #686de0;
+      --color2: #4834d4;
+    }
+
+    .pricingTable-header {
+      margin: 0 0 30px;
+    }
+
+    .pricingTable .price-value {
+      padding: 12px 0;
+      margin: 0 0 10px;
+    }
+
+    .pricingTable .price-value .amount {
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 50px;
+      display: inline-block;
+    }
+
+    .pricingTable .price-value .amount-sm,
+    .pricingTable .price-value .currency {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 27px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .pricingTable .title {
+      color: #fff;
+      background: linear-gradient(18deg, var(--color1) 49%, var(--color2) 50%);
+      font-size: 26px;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding: 12px 26px;
+      margin: 0;
+      border-radius: 50px;
+      display: inline-block;
+    }
+
+    .pricingTable .pricing-content {
+      padding: 0;
+      margin: 0 0 30px;
+      list-style: none;
+    }
+
+    .pricingTable .pricing-content li {
+      color: #fff;
+      background: #24243E;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 6px 0;
+      margin: 0 0 6px;
+    }
+
+    .pricingTable .pricing-content li:last-child {
+      margin-bottom: 0;
+    }
+
+    .pricingTable .pricingTable-signup a {
+      color: #fff;
+      background: linear-gradient(18deg, var(--color2) 49%, var(--color1) 50%);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 25px;
+      text-transform: uppercase;
+      padding: 10px 30px;
+      border-radius: 30px;
+      display: inline-block;
+      transition: all 0.3s ease 0s;
+    }
+
+    .pricingTable .pricingTable-signup a:hover {
+      text-shadow: -2px 2px 1px #333;
+    }
+
+    @media only screen and (max-width: 990px) {
+      .pricingTable {
+        margin: 0 0 40px;
+      }
+
+      .pricing-tables {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+  <!-- Header Area Start -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- Logo Start -->
+            <a href="index.html" class="logo">
+              <span class="asp">Stallers</span>
+            </a>
+            <!-- Logo End -->
+            <!-- Search Start -->
+            <div class="search-input">
+              <form id="search" action="#">
+                <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword"
+                  onkeypress="handle" />
+                <i class="fa fa-search"></i>
+              </form>
+            </div>
+            <!-- Search Start -->
+            <!-- Menu Start -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#contact">Register Now!</a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- Menu End -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header Area End -->
+
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-banner">
+            <div class="item item-1">
+              <div class="header-text">
+                <span class="category">Power-BI</span>
+     
+
+                <br>
+<br>
+<br>
+
+                <p> Ready to master Power-BI and take your skills to the next level? Enroll in Stallers online Power-BI course today! <br><b> <br> With expert instructors, <br> comprehensive study materials, and <br> personalized learning plans ,<br> </b> you'll become a pro in no time. <br> Study anytime, anywhere with our flexible online classes. <br>
+                  Register now to start a wonderful journey with Stallers!
+
+                </p>
+                <div class="main-button">
+                  <br> <a href="mailto:business.stallers@gmail.com">Contact us</a> <br>
+                  <br> <br>
+
+
+                </div>
+              </div>
+            </div>
+            <!-- <div class="item item-2">
+              <div class="header-text">
+                <span class="category">Plans we offer</span>
+
+                <p>
+                <div class="pricing-tables">
+                  <div class="pricingTable green">
+                    <div class="pricingTable-header">
+                      <div class="price-value">
+                      </div>
+                      <div class="title">
+                        <h5> Language and frameworks (Java/Python...) </h5>
+                      </div>
+                    </div>
+
+
+                    <ul class="pricing-content">
+                      <li>₹1699/monthly</li>
+                      <li>₹8000/Full Course</li>
+                      <li>Course duration : 6 months</li>
+                      <li>personalized mentorship</li>
+                      <li>1 mentor for 8 students only.</li>
+                      <li>Career Support</li>
+                    </ul>
+                    <div class="pricingTable-signup">
+                        <a href="registration 1.html">Sign Up</a>
+                    </div>
+                  </div>
+
+                  <div class="pricingTable pink">
+                    <div class="pricingTable-header">
+                      <div class="price-value">
+
+                      </div>
+                      <div class="title">
+                        <h5> Language + DSA</h5>
+                      </div>
+                    </div>
+
+                    <ul class="pricing-content">
+                      <li>₹2499/monthly</li>
+                      <li>₹12,000/Full Course</li>
+                      <li>Course duration : 6 months</li>
+                      <li>personalized mentorship</li>
+                      <li>1 mentor for only 3 students.</li>
+                      <li>Career Support</li>
+                    </ul> <br>
+                    <div class="pricingTable-signup">
+                        <a href="registration 1.html">Sign Up</a>
+                    </div>
+                  </div>
+
+                  <div class="pricingTable blue">
+                    <div class="pricingTable-header">
+                      <div class="price-value">
+
+                      </div>
+                      <div class="title">
+                        <h5>Web Development</h5>
+                      </div>
+                    </div>
+
+                    <ul class="pricing-content">
+                      <li>₹1799/monthly</li>
+                      <li>₹8000/Full Course</li>
+                      <li>Course duration : 6 months</li>
+                      <li>personalized mentorship</li>
+                      <li>one-on-one mentoring</li>
+                      <li>Career Support + Access to exclusive resources</li>
+                    </ul>
+                    <div class="pricingTable-signup">
+                        <a href="registration 1.html">Sign Up</a>
+                    </div>
+                  </div>
+                </div>
+                < </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin: auto; font-size: 2em; display: flex; justify-content: center; align-items: center; height: 10vh; position: relative; top: 23px;">
+    <span style="border-radius: 55px; ">Plans we offer</span> 
+      </div>
+
+        <p>
+          <div class="pricing-tables">
+            <div class="pricingTable green">
+              <div class="pricingTable-header">
+                <div class="price-value">
+               </div>
+                <div class="title">Basic</div>
+              </div>
+              <ul class="pricing-content">
+                <li>One Mentor, <b>Four Stars</b></li>
+                <li> <b> ₹16,999/- only</b></li>
+                <li>Placement assistance</li>
+                <li>Weekly Assesment Test</li>
+                <li>Career Support</li>
+              </ul>
+              <br>
+              <div class="pricingTable-signup">
+                  <a href="registration 1.html">Sign Up</a> <br>
+              </div> <br>
+            </div>
+        
+            <div class="pricingTable pink">
+              <div class="pricingTable-header">
+                <div class="price-value">                                      
+    
+              </div>
+                <div class="title">Standard</div>
+              </div>
+              <ul class="pricing-content">
+                <li>One Mentor, <b>Two Stars</b></li>
+                <li> <b> ₹19,999/- only</b></li>
+                <li>Placement assistance</li>
+                <li>Weekly Assesment Test</li>
+                <li>Career Support</li>
+              </ul>
+              <br>
+              <div class="pricingTable-signup">
+                  <a href="registration 1.html">Sign Up</a> <br>
+              </div> <br>
+            </div>
+        
+            <div class="pricingTable blue">
+              <div class="pricingTable-header">
+                <div class="price-value">
+    
+                </div>
+                <div class="title">Premium</div>
+              </div>
+              <ul class="pricing-content">
+                <li>Dedicated Mentor </li>
+                <li> <b> ₹25,999/- only</b></li>
+                <li>Placement assistance</li>
+                <li>Weekly Assesment Test</li>
+                <li>Career Support</li>
+              </ul>
+              <div class="pricingTable-signup">
+                  <a href="registration 1.html">Sign Up</a> <br>
+              </div> <br>
+            </div>
+          </div>
+         </div>
+      </div>
+    
+
+    <div class="contact-us section" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 align-self-center">
+            <div class="section-heading">
+              <h6>Contact Us</h6>
+              <h2>Feel free to contact us anytime</h2>
+              <p>Thank you for your time. We appreciate our current facilities. Even though we have kept everything up
+                to mark, we keep improving ourselves to deliver the best we could.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="contact-us-content">
+              <form id="contact-form" name="name">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <fieldset>  
+                    <input type="name" name="name" id="name" placeholder="Your Name..." >
+                      </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>  
+                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." >
+                      </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>  
+                      <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                      </fieldset>
+                      <a href="form_submit.html"><button type="button" id="form-submit" class="orange-button">Send message Now</button></a>
+                  </div>
+  
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="col-lg-12">
+          <p>Copyright © 2024 Stallers Organization. All rights reserved. &nbsp;&nbsp;&nbsp;</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

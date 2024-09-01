@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animated Text</title>
+  <style>.animated-text {
+    font-size: 24px;
+    font-family: sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.animated-text::after {
+    content: "";
+    display: inline-block;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}</style>
+</head>
+<body>
+    <div class="animated-text">Why?</div>
+    <div class="animated-text">Why are we doing it?</div>
+</body>
+</html>
